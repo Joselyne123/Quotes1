@@ -1,5 +1,7 @@
 # Quotes
-
+## by INGABIRE Joselyne
+# Description
+The user can create and have quote by downvote or upvote quotes.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
