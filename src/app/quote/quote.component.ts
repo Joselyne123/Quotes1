@@ -16,8 +16,16 @@ export class QuoteComponent implements OnInit {
    new Quote (6,'Tis the privilege of friendship to talk nonsense, and to have her nonsense respected.','Bonte',new Date(2020,7,30)),
   ];
 
+
   toggleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
+
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
   }
 
   deleteQuote(isComplete, index){
